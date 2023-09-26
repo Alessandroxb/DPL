@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logopag.png">
+    <title>DPL</title>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+
+    <header class="d-flex align-items-center justify-content-center">
+
+        <div>
+            <img src="images/logo.png" alt="" width="150px" height="auto">
+  
+        </div>
+    </header>
+
+    <!-- Conteúdo  -->
+    
+
+    <form id="formulario">
+
+      <section class="aquele d-flex flex-column align-items-center justify-content-center ">
+    
+        <div id="conteudo" class="blu border border-secondary rounded-5 d-flex flex-column align-items-center justify-content-center custom-width-md custom-width-sm">
+    
+          <div class="text-center mt-4">
+            <h1>Bem-vindo colaborador</h1>
+            <p>Clique no botão abaixo</p>
+          </div>
+    
+          <button type="button" id="b1" class="botao d-flex align-items-center justify-content-center hg col-8  border p-5 mb-5" >
+            <h4 class="">Responder Formulário</h4>
+          </button>
+    
+        </div>
+    
+        <!-- Primeira parte do formulário -->
+    
+        <div id="f1" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class=" titulo1 mt-3 text-center ">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="form-group">
+            <label for="tipoServico1">Tipo de Serviço:</label>
+            <select class="form-control" id="tipoServico1">
+              <option>Manutenção</option>
+              <option>Instalação</option>
+              <option>Reparo</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="dataHoraServico1">Data e Hora do Serviço:</label>
+            <input type="datetime-local" class="form-control" id="dataHoraServico1">
+          </div>
+          <div class="form-group">
+            <label for="prioridadeServico1">Prioridade do Serviço:</label>
+            <select class="form-control" id="prioridadeServico1">
+              <option>Alta</option>
+              <option>Média</option>
+              <option>Baixa</option>
+            </select>
+          </div>
+    
+          <!-- Local -->
+          <h3>Local</h3>
+          <div class="form-group mb-3">
+            <label for="endereco1">Endereço:</label>
+            <input type="text" class="form-control" id="endereco1">
+          </div>
+    
+          <div class="container">
+            <div class="row">
+              <div class="text-center mb-2">
+                <button id="next1" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Segunda parte do formulário -->
+    
+        <div id="f2" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class=" titulo1 mt-3 text-center ">
+            <h1>Formulário</h1>
+          </div>
+    
+          <!-- Equipe -->
+    
+          <h3>Equipe</h3>
+          <div class="form-group">
+            <label for="responsavel2">Nome do Responsável:</label>
+            <input type="text" class="form-control" id="responsavel2">
+          </div>
+          <div class="form-group">
+            <label for="numMembros2">Número de Membros da Equipe:</label>
+            <input type="number" class="form-control" id="numMembros2">
+          </div>
+    
+          <!-- Veículo -->
+          <h3>Veículo</h3>
+          <div class="form-group">
+            <label for="tipoVeiculo2">Tipo de Veículo:</label>
+            <select class="form-control" id="tipoVeiculo2">
+              <option>Carro</option>
+              <option>Caminhão</option>
+              <option>Moto</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="placaVeiculo2">Placa do Veículo:</label>
+            <input type="text" class="form-control" id="placaVeiculo2">
+          </div>
+          <div class="form-group mb-3">
+            <label for="marcaModelo2">Marca e Modelo do Veículo:</label>
+            <input type="text" class="form-control" id="marcaModelo2">
+          </div>
+    
+          <div class="container">
+            <div class="row">
+              <div class="text-center mb-2">
+                <button id="next2" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Terceira Parte do Formulário -->
+    
+          <div id="f3" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+            <div class=" titulo1 mt-3 text-center ">
+              <h1>Formulário</h1>
+            </div>
+    
+            <div class="container form w-75">
+              <div>
+                <div class="tituloRegra3 m-1">
+                  <h3 class="text-center acao border rounded-5">Desligar</h3>
+                </div>
+    
+                <h5>O circuito está desligado ?</h5>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="" id="flexCheckDefault3" name="regra3">
+                  <label class="form-check-label mb-2" for="flexCheckDefault3">
+                    Sim
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="" id="flexCheckChecked3" name="regra3">
+                  <label class="form-check-label" for="flexCheckChecked3">
+                    Não
+                  </label>
+                </div>
+    
+                <div class="mb-3 mt-3">
+                  <label for="formFile3" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                  <input class="form-control border border-primary" type="file" accept="images/*" id="formFile3">
+                </div>
+    
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="text-center mb-2">
+                    <button id="next3" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <!-- Quarta Parte do Formulário -->
+    
+        <div id="f4" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class="titulo3 mt-3 text-center">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="container form w-75">
+            <div>
+              <div class="tituloRegra4 m-1">
+                <h3 class="text-center acao border rounded-5">Bloquear</h3>
+              </div>
+    
+              <h5>O circuito está bloqueado e não corre risco de ser religado ?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckDefault4" name="regra4">
+                <label class="form-check-label mb-2" for="flexCheckDefault4">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckChecked4" name="regra4">
+                <label class="form-check-label" for="flexCheckChecked4">
+                  Não
+                </label>
+              </div>
+    
+              <div class="mb-3 mt-3">
+                <label for="formFile4" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                <input class="form-control border border-primary" type="file" accept="images/*" id="formFile4">
+              </div>
+            </div>
+    
+            <div class="container ">
+              <div class="row">
+                <div class="text-center mb-2">
+                  <button id="next4" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <!-- Quinta Parte do Formulário -->
+    
+        <div id="f5" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class="titulo1 mt-3 text-center">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="container form w-75 ">
+            <div>
+              <div class="tituloRegra5 m-1">
+                <h3 class="text-center acao border rounded-5">Sinalizar</h3>
+              </div>
+    
+              <h5>O local está devidamente sinalizado ?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckDefault5" name="regra5">
+                <label class="form-check-label mb-2" for="flexCheckDefault5">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckChecked5" name="regra5">
+                <label class="form-check-label" for="flexCheckChecked5">
+                  Não
+                </label>
+              </div>
+    
+              <div class="mb-3 mt-3">
+                <label for="formFile5" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                <input class="form-control border border-primary" type="file" accept="images/*" id="formFile5">
+              </div>
+            </div>
+    
+            <div class="container">
+              <div class="row">
+                <div class="text-center mb-2">
+                  <button id="next5" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Sexta parte do Formulário -->
+    
+        <div id="f6" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class="titulo1 mt-3 text-center">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="container form w-75 ">
+            <div>
+              <div class="tituloRegra6 m-1">
+                <h3 class="text-center acao border rounded-5">Testar</h3>
+              </div>
+    
+              <h5>Á área de trabalho (circuito) foi testada e está sem passagem de energia ?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckDefault6" name="regra6">
+                <label class="form-check-label mb-2" for="flexCheckDefault6">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckChecked6" name="regra6">
+                <label class="form-check-label" for="flexCheckChecked6">
+                  Não
+                </label>
+              </div>
+    
+              <div class="mb-3 mt-3">
+                <label for="formFile6" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                <input class="form-control border border-primary" type="file" accept="images/*" id="formFile6">
+              </div>
+            </div>
+    
+            <div class="container">
+              <div class="row">
+                <div class="text-center mb-2">
+                  <button id="next6" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Sétima parte do formulário -->
+    
+        <div id="f7" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class="titulo1 mt-3 text-center">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="container form w-75 ">
+            <div>
+              <div class="tituloRegra7 m-1">
+                <h3 class="text-center acao border rounded-5">Aterrar</h3>
+              </div>
+    
+              <h5>O local foi aterrado à montante e a jusante ?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckDefault7" name="regra7">
+                <label class="form-check-label mb-2" for="flexCheckDefault7">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckChecked7" name="regra7">
+                <label class="form-check-label" for="flexCheckChecked7">
+                  Não
+                </label>
+              </div>
+    
+              <div class="mb-3 mt-3">
+                <label for="formFile7" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                <input class="form-control border border-primary" type="file" accept="images/*" id="formFile7">
+              </div>
+            </div>
+    
+            <div class="container">
+              <div class="row">
+                <div class="text-center mb-2">
+                  <button id="next7" type="button" class="btn btn-outline-warning w-75">Avançar</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Oitava parte do formulário -->
+    
+        <div id="f8" class="blu border border-secondary rounded-5 custom-width-md custom-width-sm row d-block flex-column d-none">
+          <div class="titulo8 mt-3 text-center">
+            <h1>Formulário</h1>
+          </div>
+    
+          <div class="container form w-75">
+            <div>
+              <div class="tituloRegra8 m-1">
+                <h3 class="text-center acao border rounded-5">Proteger</h3>
+              </div>
+    
+              <h5>Todas as superfícies próximas estão devidamente isoladas?</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckDefault8" name="regra8">
+                <label class="form-check-label mb-2" for="flexCheckDefault8">
+                  Sim
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" value="" id="flexCheckChecked8" name="regra8">
+                <label class="form-check-label" for="flexCheckChecked8">
+                  Não
+                </label>
+              </div>
+    
+              <div class="mt-3">
+                <label for="formFile8" class="form-label">Selecione uma foto que comprove o cumprimento da regra.</label>
+                <input class="form-control border border-primary" type="file" accept="images/*" id="formFile8">
+              </div>
+    
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Observação em caso de algum descumprimento de regra" rows="3" style="height: 57px;"></textarea>
+              </div>
+    
+            </div>
+    
+            <div class="container">
+              <div class="row">
+                <div class="text-center mb-2">
+                  <button type="submit" class="btn btn-outline-warning w-75" id="next8">Finalizar</button>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+      </section>
+    </form>
+    
+
+    
+
+
+    <footer class="rodape p-2 d-flex flex-md-row flex-column align-items-center justify-content-center">
+
+        <!-- ICONS -->
+    
+        <div class="custom-icon">
+          <i id="icon1" class="bi bi-github m-2"></i>
+          <i id="icon2" class="bi bi-linkedin m-2"></i>
+          <i id="icon3" class="bi bi-whatsapp m-2"></i>
+          <i id="icon4" class="bi bi-instagram m-2"></i>
+        </div>
+    
+        <!-- TXT  -->
+
+        
+    
+        <div class="text-light text-center mt-md-3 order-md-2 d-md-flex ms-md-5">
+          <p>Todos os direitos reservados © </p>
+
+
+            <img id="img" class="ms-md-5 " src="images/um_logo.png" alt="DPL logo" >
+ 
+        </div>
+
+
+
+
+      </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/scrip.js"></script>  
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+
+/* TELA 1 */
+
+
+
+/* HEADER ~~ CABEÇALHO */
+
+header{
+    background-color: #123f50;
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+
+
+/* HOME ~~ INÍCIO */
+
+
+
+
+
+@media (min-width: 768px) {
+    .custom-width-md {
+      width: 50% !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .custom-width-sm {
+      width: 95% !important;
+    }
+  }
+  
+.botao{
+    border-radius: 40px;
+} 
+
+.botao:hover {
+    transform: scale(1.05);
+    transition: transform 0.6s ease; 
+}
+
+
+.acao{
+    background-color: #F97D01;
+}
+
+
+.azul{  
+    background-color: #123f50;
+}
+  
+.titulo1{
+    border-radius: 5px;
+}
+
+
+/* FOOTER ~~ RODAPÉ */
+
+.rodape{
+    background-color: #123f50;
+    width: 100%;
+}
+
+.custom-icon i {
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: inline-block; /* Para ajustar a posição */
+    cursor: pointer;
+}
+
+.custom-icon i:hover {
+    transform: scale(1.2); 
+    color: #fff;
+    margin-top: -4px; /* Ajuste de posição para compensar a escala */
+}
+
+/* SWAL BUTTON ESTILOS */
+
+.swal-button {
+    background-color: #123f50;
+    color: white;
+    border: none; 
+    border-radius: 8%;
+    padding: 10px 18px; 
+    cursor: pointer;
+    margin: 5px; 
+    
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.swal-button:hover {
+    background-color: #F97D01; 
+    transform: scale(1.1);
+}
+
+.hg{
+    height: 5vh;
+    color: #fff;
+    background-color: #F97D01;
+}
+
+.aquele {
+    width: 100%;
+    min-height: calc(93vh - 100px); /* Ajuste para a altura do cabeçalho */
+    background-image: url("../images/bgc.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.blu {
+    background-color: #123f50;
+    color: #fff;
+    
+}
+
+.a{
+    width: 100%;
+    backdrop-filter: blur(2px); /* Ajuste o valor de desfoque conforme desejado */
+
+}
+
+
+#img {
+    width:50px;
+    height: auto; 
+  }
+  
+  
+  
+  
+/* TELA 2 */
+
+
